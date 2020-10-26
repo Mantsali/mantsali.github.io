@@ -23,6 +23,10 @@ h1, h2, h3, h4, h5, h6, strong{
     font-weight: 500;
 }
 
+section .section-head{
+    letter-spacing: 0.1em;
+    font-weight: 600;
+}
 p, li, span, label, input, textarea, a{
     color: var(--secoundaryText);
     font-family: 'Nunito', sans-serif;
@@ -96,9 +100,14 @@ section {
     text-align: center;
     position:relative;
 }
+section.section{
+    min-height: 100vh;
+    padding: 15px 5px;
+}
 section h2.section-head{
     position: relative;
     padding-bottom: 10px;
+   
     display: inline-block;
 }
 section h2.section-head::after{
@@ -152,4 +161,7 @@ section h2.section-head::after{
 
 
 
-footer{text-align: center;}
+footer{
+    text-align: center;
+    padding: 20px 5px;
+}
