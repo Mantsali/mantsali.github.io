@@ -1,0 +1,206 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url("../images/matt-sclarandis-S_IV6KqGeso-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  min-height: 8vh;
+}
+.logo {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+.nav-menu a {
+  text-transform: uppercase;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.nav-menu a:hover {
+  animation: colorChange 3s ease-in-out;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  color: #000;
+  transition: all 0.3s ease;
+}
+@keyframes colorChange {
+  0% {
+    color: #000;
+  }
+
+  50% {
+    color: #ddd;
+  }
+
+  100% {
+    color: #fff;
+  }
+}
+
+section,
+footer {
+  padding: 40px 20px;
+}
+#contact {
+  display: grid;
+  align-items: center;
+
+  row-gap: 1.5rem;
+  flex-direction: column;
+}
+
+#contact h3 {
+  font-size: 3rem;
+
+  text-align: center;
+}
+
+#contact p {
+  text-align: center;
+}
+
+#contact .address ul {
+  display: flex;
+  justify-content: center;
+}
+
+#contact .social-link {
+  color: #000;
+  padding: 20px;
+}
+#contact .contactformdiv {
+  width: 60vw;
+  height: 400px;
+  justify-self: center;
+  display: flex;
+  column-gap: 1.5rem;
+  border: 1px solid #c1c1c1;
+  border-radius: 15px;
+  box-shadow: 4px 3px 6px #c1c1c1, 0px 4px 6px #c1c1c1;
+}
+
+.contactformdiv img {
+  max-width: 20vw;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.contactformdiv .formdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contactformdiv form {
+  width: 40vw;
+}
+
+.contactformdiv form input,
+.contactformdiv form textarea {
+  width: 80%;
+}
+
+.email-err,
+.name-err,
+.message-err {
+  display: none;
+  color: rgb(255, 82, 82);
+}
+
+.success-message {
+  display: none;
+  color: rgb(52, 185, 52);
+}
+footer {
+  background-color: #181818;
+  color: #fff;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024) {
+  .nav-menu {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 760) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-menu {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-menu li {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  display: none;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
