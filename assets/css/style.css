@@ -1,5 +1,5 @@
 :root{
-    --mainColor: #ffe9e8;
+    --mainColor: #1c1c1c;
     --secoundaryColor: #fff;
 
     --pink: #ca278c;
@@ -9,13 +9,7 @@
     --secoundaryText: #464648;    
 }
 
-body, html{
-    background-color: var(--mainColor);
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-   scroll-behavior: smooth; 
-}
+
 
 h1, h2, h3, h4, h5, h6, strong{
     color: var(--mainText);
@@ -25,76 +19,9 @@ h1, h2, h3, h4, h5, h6, strong{
 
 section .section-head{
     letter-spacing: 0.1em;
-    font-weight: 600;
-}
-p, li, span, label, input, textarea, a{
-    color: var(--secoundaryText);
-    font-family: 'Nunito', sans-serif;
-}
-a, a:hover, a:active{
-    text-decoration: none;
+    font-weight: 400;
 }
 
-a:hover{
-    color: var(--pink);
-}
-nav{
-    overflow: hidden;
-    background-color: transparent;
-    z-index: 5;
-
-}
-nav .nav-header{
-    color: var(--mainText);
-}
-nav .nav-header:hover{
-    animation-name: animateColor;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
-@keyframes animateColor {
-    0%{color: var(--mainText);}
-    25%{color: var(--red);}
-    50%{color: var(--pink);}
-    75%{color: var(--mainColor);}
-    100%{color: var(--secoundaryColor);}
-    
-}
-nav ul li{
-    list-style: none;
-    padding: 0 2em;
-}
-
-header{
-   
-    background-image: url('../image/header.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 100vh;
-    width: 100vw;
-}
-
-header .banner-text{
- 
-   
-    /*padding-top: 24em;*/
-    text-align: center;
-
-    display: grid;
-    align-content: center;
-    height: 80vh;
-
-}
-header .banner-text h1, header .banner-text h2
-{
-    text-shadow: 
-    1px 0px 1px #ccc, 0px 1px 1px #eee, 
-    2px 1px 1px #ccc, 1px 2px 1px #eee,
-    3px 2px 1px #ccc, 2px 3px 1px #eee,
-    4px 3px 1px #ccc, 3px 4px 1px #eee,
-    5px 4px 1px #ccc;
-}
 .section1{background-color: var(--secoundaryColor);}
 section {
     text-align: center;
@@ -145,20 +72,6 @@ section h2.section-head::after{
 .project-block .pink-overlay .text{
     padding-top: 30%;
 }
-.social{
-    width: 100%;
-    text-align: right;
-}
-.social-links li{
-    padding-right: 2em;
-    list-style: none;
-}
-.social-links img{
-    width: 25px;
-
-}
-
-
 
 
 footer{

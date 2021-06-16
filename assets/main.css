@@ -5,6 +5,22 @@
   box-sizing: border-box;
 }
 
+body,
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--mainColor);
+  color: var(--secoundaryText);
+  font-family: "Nunito", sans-serif;
+}
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
 header {
   background-image: url("../images/matt-sclarandis-S_IV6KqGeso-unsplash.jpg");
   background-position: center;
@@ -28,7 +44,7 @@ nav {
 .nav-menu {
   display: flex;
   justify-content: space-around;
-  width: 30%;
+  width: 40%;
 }
 .nav-menu a {
   text-transform: uppercase;
@@ -36,7 +52,6 @@ nav {
   font-weight: bold;
   letter-spacing: 3px;
   font-size: 14px;
-  text-decoration: none;
 }
 
 .nav-menu a:hover {
@@ -80,12 +95,6 @@ footer {
   flex-direction: column;
 }
 
-#contact h3 {
-  font-size: 3rem;
-
-  text-align: center;
-}
-
 #contact p {
   text-align: center;
 }
@@ -124,6 +133,7 @@ footer {
   justify-content: center;
 }
 .contactformdiv form {
+  text-align: left;
   width: 40vw;
 }
 
@@ -132,6 +142,21 @@ footer {
   width: 80%;
 }
 
+.contactformdiv form .btn {
+  border-color: var(--mainColor);
+  color: var(--mainText);
+  background-color: #fff;
+}
+
+.contactformdiv form .btn:hover {
+  border-color: red;
+  color: var(--mainText);
+  background-color: var(--red);
+}
+
+.contactformdiv form .btn:focus {
+  box-shadow: none;
+}
 .email-err,
 .name-err,
 .message-err {
@@ -142,6 +167,12 @@ footer {
 .success-message {
   display: none;
   color: rgb(52, 185, 52);
+}
+input.invalid {
+  border: 1px solid var(--red);
+}
+.social-link i:hover {
+  color: var(--red);
 }
 footer {
   background-color: #181818;
