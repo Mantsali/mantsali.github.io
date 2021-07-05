@@ -41,8 +41,11 @@ const sendEmail = () =>{
       method: 'POST', 
       body: data
     }).then(response => response.text()).then(response => {
+      console.log(response);
       return response;
-    }).catch(error => {return error});
+    }).catch(error => {
+      console.log(error);
+      return error});
 
   }
   const resetElem = (elem) =>{
