@@ -3,4 +3,4 @@
 Mantsali Nthabiseng Sekoli
 Software Developer
 
-Email:  mnsekoli@gmail.com
+Email:  mantsali.sekoli@gmail.com
