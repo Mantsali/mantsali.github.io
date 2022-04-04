@@ -21,21 +21,47 @@ a:active {
   text-decoration: none;
 }
 
-header {
-  background-image: url("../images/matt-sclarandis-S_IV6KqGeso-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-
-  height: 100vh;
+h1{
+ /* font-size: 3.5em;*/
 }
 
+h2{
+  /*font-size: 2.5em;*/
+font-weight: 800;}
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 20px;
   min-height: 8vh;
+
+  width: 100%;
+  position: fixed;
+  top: 0px;
+
+  z-index: 2;
 }
+
+/*
+
+nav .nav-header{
+    color: var(--mainText);
+}
+nav .nav-header:hover{
+    animation-name: animateColor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes animateColor {
+    0%{color: var(--mainText);}
+    25%{color: var(--red);}
+    50%{color: var(--pink);}
+    75%{color: var(--mainColor);}
+    100%{color: var(--secoundaryColor);}
+    
+}
+
+*/
 .logo {
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -46,7 +72,8 @@ nav {
   justify-content: space-around;
   width: 40%;
 }
-.nav-menu a {
+/*.nav-menu a */
+.nav-item {
   text-transform: uppercase;
   color: #000;
   font-weight: bold;
@@ -54,7 +81,8 @@ nav {
   font-size: 14px;
 }
 
-.nav-menu a:hover {
+/*.nav-menu a:hover*/
+.nav-item:hover {
   animation: colorChange 3s ease-in-out;
 }
 
