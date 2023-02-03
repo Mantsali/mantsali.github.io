@@ -28,29 +28,30 @@ strong {
 
 
 header {
-  background-image: url("../../images/freddie-marriage-vSchPA-YA_A-unsplash.jpg");
+
+  background-image: url('../images/milad-fakurian-Oi_oaJk3qlo-unsplash.jpg');
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
-
   height: 100vh;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+
+ 
 }
 
 header .intro {
+  padding-left: 6rem;
   padding-bottom: 20px;
-  text-shadow: 
-  1px 0px 1px #ccc, 0px 1px 1px #eee, 
-  2px 1px 1px #ccc, 1px 2px 1px #eee,
-  3px 2px 1px #ccc, 2px 3px 1px #eee,
-  4px 3px 1px #ccc, 3px 4px 1px #eee,
-  5px 4px 1px #ccc;
+  color: var(--white);
+ 
 }
-
+header .intro h1, header .intro h2{
+  color: var(--white);
+  font-weight: normal;
+}
 section .section-head {
   letter-spacing: 0.1em;
   font-weight: 400;
