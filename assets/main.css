@@ -1,7 +1,7 @@
 * {
   padding: 0px;
   margin: 0px;
-  list-style: none;
+
   box-sizing: border-box;
 }
 
@@ -11,9 +11,10 @@ html {
 }
 
 body {
-  background-color: var(--black);
+
   color: var(--white);
   font-family: "Lato", sans-serif;
+
 }
 a,
 a:hover,
@@ -21,26 +22,11 @@ a:active {
   text-decoration: none;
 }
 
-h1{
- /* font-size: 3.5em;*/
-}
 
 h2{
   /*font-size: 2.5em;*/
 font-weight: 800;}
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 20px;
-  min-height: 8vh;
 
-  width: 100%;
-  position: fixed;
-  top: 0px;
-
-  z-index: 2;
-}
 
 /*
 
@@ -67,15 +53,11 @@ nav .nav-header:hover{
   text-transform: uppercase;
   font-size: 20px;
 }
-.nav-menu {
-  display: flex;
-  justify-content: space-around;
-  width: 40%;
-}
+
 /*.nav-menu a */
 .nav-item {
   text-transform: uppercase;
-  color: #000;
+  color: #1c1c1c;
   font-weight: bold;
   letter-spacing: 3px;
   font-size: 14px;
@@ -83,7 +65,7 @@ nav .nav-header:hover{
 
 /*.nav-menu a:hover*/
 .nav-item:hover {
-  animation: colorChange 3s ease-in-out;
+  animation: colorChange 0.4s ease-in-out;
 }
 
 .burger {
@@ -94,20 +76,20 @@ nav .nav-header:hover{
   width: 25px;
   height: 3px;
   margin: 5px;
-  color: #000;
+  color: #1c1c1c;
   transition: all 0.3s ease;
 }
 @keyframes colorChange {
   0% {
-    color: #000;
+    color: #1c1c1c;
   }
 
   50% {
-    color: #ddd;
+    color: #210343;;
   }
 
   100% {
-    color: #fff;
+    color: #7c40ff;
   }
 }
 
@@ -135,7 +117,7 @@ footer {
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: #000;
+    background-color: #1c1c1c;
     display: flex;
     flex-direction: column;
     align-items: center;

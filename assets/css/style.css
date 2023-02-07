@@ -1,5 +1,5 @@
 :root {
-  --mainColor: #651fff;
+  --mainColor: #210343;;
   --secoundaryColor: #7c40ff;
   --purple: #9f19d7;
 
@@ -26,7 +26,39 @@ strong {
 }
 
 
+/******************************
+navbar section
+*************************************/
+navbar {
 
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 20px;
+  padding-right: 20px;
+  min-height: 8vh;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+
+  box-shadow: #1c1c1c 1px 1px 4px;
+  z-index: 2;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.nav-menu li{
+  list-style: none;
+}
+
+/******************************8
+Header / Hero section
+*************************************/
 header {
 
   background-image: url('../images/milad-fakurian-Oi_oaJk3qlo-unsplash.jpg');
@@ -52,22 +84,34 @@ header .intro h1, header .intro h2{
   color: var(--white);
   font-weight: normal;
 }
+
+section:nth-child(even){
+  background: rgb(33,3,67);
+  background: linear-gradient(137deg, rgba(33,3,67,1) 36%, rgba(77,24,137,1) 100%);
+
+  color: var(--white);
+}
+section:nth-child(odd){
+  background-color: #fff;
+  color: var(--mainText);
+}
+
+
+
 section .section-head {
   letter-spacing: 0.1em;
   font-weight: 400;
   padding-top: 3rem;
 }
 
-.section1 {
-  background-color: var(--white);
-}
+
 section {
   text-align: center;
   position: relative;
 }
 section.section {
-  min-height: 100vh;
-  padding: 15px 5px;
+  /*min-height: 100vh;*/
+  padding: 3rem 6rem 5rem 6rem;
 }
 section h2.section-head {
   position: relative;
@@ -87,8 +131,36 @@ section h2.section-head::after {
   background-color: var(--mainColor);
 }
 
-#skills {
+/******************************8
+About section
+*************************************/
+#about{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  justify-content: center;
+  
 }
+
+#about .skillslist{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+#about .skillslist li{
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: var(--secoundaryColor);
+  border-radius: 5px;
+  border: var(--black);
+  color: var(--white);
+
+  list-style: none;
+}
+
+
+
 .project-block {
   position: relative;
 }
@@ -125,10 +197,6 @@ Contact section
   text-align: center;
 }
 
-#contact .address ul {
-  display: flex;
-  justify-content: center;
-}
 
 #contact .social-link {
   color: #000;
@@ -197,6 +265,15 @@ Contact section
 input.invalid {
   border: 1px solid var(--red);
 }
+
+#contact .address ul {
+  display: flex;
+  justify-content: center;
+}
+#contact .address ul li{
+list-style: none;
+}
+
 .social-link i:hover {
   color: var(--red);
 }
@@ -204,4 +281,7 @@ input.invalid {
 footer {
   text-align: center;
   padding: 20px 5px;
+
+  background: rgb(33,3,67);
+  background: linear-gradient(137deg, rgba(33,3,67,1) 36%, rgba(77,24,137,1) 100%);
 }
