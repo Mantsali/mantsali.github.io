@@ -25,31 +25,36 @@ strong {
   font-weight: 500;
 }
 
+img{
+  width: 100%;
+}
 
 /******************************
 navbar section
 *************************************/
 navbar {
 
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(128, 0, 128, .5);
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
+  padding: 10px 40px;
+  padding-top: 10px;
   padding-right: 20px;
-  min-height: 8vh;
+  height: 60px;
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 0px;
-
-  box-shadow: #1c1c1c 1px 1px 4px;
-  z-index: 2;
+  
+  box-shadow: #1c1c1c 0px 2px 4px;
+  z-index: 4;
 }
 
 .nav-menu {
   display: flex;
   justify-content: space-around;
   width: 40%;
+  margin: 0;
 }
 
 .nav-menu li{
@@ -61,30 +66,49 @@ Header / Hero section
 *************************************/
 header {
 
+
   background-image: url('../images/milad-fakurian-Oi_oaJk3qlo-unsplash.jpg');
   background-position: center;
   background-size: cover;
   height: 100vh;
-
+ min-height: 600px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 
+    position: relative;
  
 }
 
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(128, 0, 128, 0.5);
+
+}
 header .intro {
-  padding-left: 6rem;
-  padding-bottom: 20px;
+  position: absolute;
+  top: 20rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
   color: var(--white);
- 
+  line-height: 1.5;
+  z-index: 2;
 }
 header .intro h1, header .intro h2{
   color: var(--white);
   font-weight: normal;
+  margin-bottom: 2rem;
 }
-
+header .intro p{
+  font-size: 18px;
+margin-bottom: 2rem;
+}
 section:nth-child(even){
   background: rgb(33,3,67);
   background: linear-gradient(137deg, rgba(33,3,67,1) 36%, rgba(77,24,137,1) 100%);
@@ -159,8 +183,19 @@ About section
   list-style: none;
 }
 
+#about .about-image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-
+.profile-image{
+width: 200px;
+height: 200px;
+border-radius: 50%;
+object-fit: cover;
+margin-top: 40px;
+}
 .project-block {
   position: relative;
 }

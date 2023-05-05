@@ -57,7 +57,7 @@ nav .nav-header:hover{
 /*.nav-menu a */
 .nav-item {
   text-transform: uppercase;
-  color: #1c1c1c;
+  color: #fff;
   font-weight: bold;
   letter-spacing: 3px;
   font-size: 14px;
@@ -117,7 +117,7 @@ footer {
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: #1c1c1c;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
