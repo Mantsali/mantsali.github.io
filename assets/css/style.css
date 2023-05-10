@@ -92,7 +92,7 @@ header .overlay {
 }
 header .intro {
   position: absolute;
-  top: 20rem;
+  top: 16rem;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -166,10 +166,14 @@ About section
   
 }
 
+#about .about-intro{
+  line-height: 1.5;
+}
 #about .skillslist{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+column-gap: 16px;
+  flex-wrap: wrap;
   
 }
 #about .skillslist li{
