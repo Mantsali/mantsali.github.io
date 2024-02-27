@@ -193,8 +193,8 @@ column-gap: 16px;
 }
 
 .profile-image{
-width: 200px;
-height: 200px;
+width: 350px;
+height: 350px;
 border-radius: 50%;
 object-fit: cover;
 margin-top: 40px;
@@ -212,6 +212,7 @@ margin-top: 40px;
 
 .project-block {
   position: relative;
+  box-shadow: #1c1c1c 2px 2px 6px;
 }
 .project-block .pink-overlay {
   position: absolute;
@@ -335,9 +336,13 @@ list-style: none;
 /***********************************
 portfolio
 ***********************************/
+.portfolio {
+  margin: 4rem 0;
+}
 .portfolio h1{
   text-align: center;
   padding-top: 20px;
+
 }
 .portfolio .content{
   display: grid;
@@ -346,10 +351,12 @@ portfolio
 
 .portfolio .content .project{
   padding: 10px;
-
+  box-shadow: #1c1c1c 4px 6px 6px;
+  margin: 20px;
 }
 .portfolio .content .project img{
   padding: 20px;
+  border-radius: 25px;
 }
 .portfolio .content .project h3{
 
@@ -360,10 +367,12 @@ portfolio
 }
 .portfolio .content .project a,.portfolio .content .project p{
   padding-left: 20px;
+  padding-right: 20px;
 }
 .portfolio .content .project a{
   text-decoration: underline;
 }
+
 footer {
   font-size: 12px;
   text-align: center;
