@@ -420,6 +420,12 @@ footer {
 }
 
 @media screen and (max-width: 420px) {
+  header .intro{
+    left: 0px;
+    top: 12rem;
+    transform: none;
+
+  }
   .formdiv .social-text{
     display: none;
   }
