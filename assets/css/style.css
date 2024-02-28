@@ -21,8 +21,8 @@ h5,
 h6,
 strong {
   color: var(--mainText);
-  font-family: "Ultra", serif;
-  font-weight: 500;
+  font-family: "Kanit", serif;
+  font-weight: 300;
 }
 
 img{
@@ -98,6 +98,9 @@ header .intro {
   color: var(--white);
   line-height: 1.5;
   z-index: 2;
+}
+header .intro h1{
+  font-size: 4.5rem;
 }
 header .intro h1, header .intro h2{
   color: var(--white);
@@ -359,13 +362,16 @@ portfolio
   border-radius: 25px;
 }
 .portfolio .content .project h3{
-
   text-align: center;
+}
+.portfolio .content .project h3 a{
+  color: purple;
+  text-decoration: none;
 }
 .portfolio .content .project p{
   color: #1c1c1c;
 }
-.portfolio .content .project a,.portfolio .content .project p{
+.portfolio .content .project p{
   padding-left: 20px;
   padding-right: 20px;
 }
