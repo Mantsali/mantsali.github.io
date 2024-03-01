@@ -139,13 +139,13 @@ section.section {
   /*min-height: 100vh;*/
   padding: 3rem 6rem 5rem 6rem;
 }
-section h2.section-head {
+section h2.section-head, .portfolio h1.section-head {
   position: relative;
   padding-bottom: 10px;
 
   display: inline-block;
 }
-section h2.section-head::after {
+section h2.section-head::after, .portfolio h1.section-head::after {
   position: absolute;
   content: " ";
   height: 3px;
@@ -223,10 +223,12 @@ margin-top: 40px;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--purple);
+  background-color: rgba(158, 25, 215, 0.7);
   z-index: 4;
   display: none;
 }
+
+
 .project-block:hover .pink-overlay {
   display: block;
 }
@@ -340,7 +342,7 @@ list-style: none;
 portfolio
 ***********************************/
 .portfolio {
-  margin: 4rem 0;
+  margin: 4rem;
 }
 .portfolio h1{
   text-align: center;
@@ -349,7 +351,7 @@ portfolio
 }
 .portfolio .content{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .portfolio .content .project{
@@ -370,10 +372,9 @@ portfolio
 }
 .portfolio .content .project p{
   color: #1c1c1c;
-}
-.portfolio .content .project p{
   padding-left: 20px;
   padding-right: 20px;
+  text-align: left;
 }
 .portfolio .content .project a{
   text-decoration: underline;
@@ -392,15 +393,19 @@ footer {
 @media screen and (max-width: 1024px) {
   navbar .nav-menu {
     width: 60%;
+    display: none;
   }
 }
 @media screen and (max-width: 900px) {
   body {
     overflow-x: hidden;
   }
+  .project-block .pink-overlay {
+    display: block;
+  }
   .nav-menu {
     position: absolute;
-    right: 0px;
+    /*right: 0px;*/
     height: 92vh;
     top: 8vh;
     background-color: #fff;
@@ -408,8 +413,10 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 50%;
+    /*
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
+    */
   }
   .nav-menu li {
     opacity: 0;
